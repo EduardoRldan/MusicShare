@@ -1,0 +1,18 @@
+<!--Cabeza de la pagina-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>My Music</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--Cuerpo de la pagina-->
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let song of songs">
+      <ion-label>
+        <h2>{{ song.title }}</h2>
+        <p>{{ song.artist }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

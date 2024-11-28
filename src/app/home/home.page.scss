@@ -1,27 +1,67 @@
-#container {
-  text-align: center;
+ion-menu::part(backdrop) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+  box-shadow: 4px 0px 16px rgba(0, 0, 0, 0.18);
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+}
+
+ion-toolbar {
+  --background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+}
+
+ion-header {
+  --background: var(--ion-color-primary);
+}
+
+ion-content {
+  --background: #2b2b2b;
+}
+
+ion-item {
+  --background: transparent;
+  --color: #00ff00; /* Color verde para el texto */
+  --color-focused: #00ff00; /* Color verde cuando el item está enfocado */
+  --highlight-background: rgba(0, 255, 0, 0.1);
+  --highlight-color: #00ff00; /* Color verde para el highlight */
+  --border-color: rgba(0, 255, 0, 0.2);
+}
+
+ion-icon {
+  color: #00ff00; /* Color verde para los iconos */
+}
+
+ion-label {
+  color: #00ff00; /* Color verde para las etiquetas */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #fff; /* Color blanco para el texto dentro del contenedor */
 }
 
 #container strong {
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.2rem;
 }
 
 #container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  font-size: 1rem;
+  color: #ccc; /* Color gris claro para los párrafos */
 }
 
-#container a {
-  text-decoration: none;
+ion-button {
+  --background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  --background-hover: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  --background-activated: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  --background-focused: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  --color: #00ff00; /* Color verde para el texto del botón */
+  margin-top: 20px;
 }
