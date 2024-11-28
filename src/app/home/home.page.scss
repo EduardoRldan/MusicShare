@@ -1,5 +1,71 @@
+/* Estilos globales para la página de login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #1a1a1a; /* Fondo oscuro similar al de home */
+  padding: 20px;
+}
+
+.login-container {
+  background-color: #2b2b2b; /* Fondo oscuro para el formulario */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 380px; /* Ancho máximo para mantenerlo centrado */
+}
+
+.input-item {
+  margin-bottom: 16px;
+}
+
+ion-label {
+  color: #00ff00; /* Color verde para las etiquetas */
+}
+
+ion-input {
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 44px;
+  padding-left: 10px;
+}
+
+ion-input:focus {
+  border: 1px solid #00ff00; /* Verde para el enfoque */
+}
+
+.login-btn, .register-btn {
+  margin-top: 16px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
+  border-radius: 4px;
+  height: 50px;
+  color: #00ff00; /* Texto en verde */
+}
+
+.login-btn {
+  background-color: #00ff00; /* Fondo verde para el botón de login */
+  color: #1a1a1a; /* Texto oscuro en el botón */
+}
+
+.register-btn {
+  background-color: #333; /* Fondo oscuro para el botón de registro */
+  color: #00ff00; /* Texto verde para el botón de registro */
+}
+
+ion-button {
+  --border-radius: 4px;
+  --padding-start: 10px;
+  --padding-end: 10px;
+}
+
+/* Ajustes visuales para que se parezca a la página de Home */
 ion-menu::part(backdrop) {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido para el menú */
 }
 
 ion-menu::part(container) {
@@ -55,13 +121,4 @@ ion-label {
 #container p {
   font-size: 1rem;
   color: #ccc; /* Color gris claro para los párrafos */
-}
-
-ion-button {
-  --background: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
-  --background-hover: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
-  --background-activated: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
-  --background-focused: linear-gradient(135deg, #333333 0%, #1a1a1a 100%);
-  --color: #00ff00; /* Color verde para el texto del botón */
-  margin-top: 20px;
 }
